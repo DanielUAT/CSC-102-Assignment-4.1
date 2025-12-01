@@ -21,13 +21,11 @@ function stop()
 function moveCat()
 {
     var image = document.getElementById("Happy Cat"); // get the cat image element
-    console.log("Moving the cat");
-    image.style.top = y + "px"; // update the y position
+      image.style.top = y + "px"; // update the y position
     image.style.left= x + "px"; // update the x position
     if (x + image.width >  window.innerWidth || x <= 0) // check for horizontal boundaries
     {
-        console.log("Are we hitting the edge?");
-        changex=-changex; // reverse horizontal direction
+                changex=-changex; // reverse horizontal direction
     }
     if (y + image.height >  window.innerHeight || y <= 0) // check for vertical boundaries
     {
